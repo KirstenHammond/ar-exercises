@@ -6,7 +6,7 @@ require_relative './exercise_3'
 puts "Exercise 4"
 puts "----------"
 
-# Create 3 more stores
+# Create 3 more stores and find stores with certain revenue/products
 
 surrey = Store.create(name: "Surrey", annual_revenue: 224000, mens_apparel: false, womens_apparel: true)
 #puts surrey.inspect
@@ -23,7 +23,7 @@ puts Store.count #5
 puts "Mens stockists and revenue"
 @mens_stores.each do |store|
   puts store.name
-  puts store.annual_revenue
+  puts "$#{store.annual_revenue}"
 end
 
 #puts @mens_stores.inspect
@@ -32,6 +32,6 @@ end
 puts "Womens stockists under $1m in revenue"
 @women_underperforming.each do |store|
   puts store.name
-  puts store.annual_revenue
+  puts "$#{store.annual_revenue}"
 end
 #puts @women_underperforming.inspect

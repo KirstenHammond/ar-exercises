@@ -12,6 +12,6 @@ richmond = Store.create(name: "Richmond", annual_revenue: 1260000, mens_apparel:
 #puts richmond.inspect
 
 gastown = Store.create(name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_apparel: false)
-#puts gastown.inspect
+puts gastown.inspect
 
 puts "#{Store.count} stores in the Stores table"
